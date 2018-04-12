@@ -32,17 +32,11 @@ header {
   margin-bottom: 1.2px;
 	height: 130px;
 	padding: .75px 1.4px;
-	text-align: left;
   border: 1px solid black;
 	flex: 1 100%;
-}
-
-/*font styling of Taylor Bentley*/
-h1 {
 	color: black;
 	font-size: 70px;
-  font-family: "Cabin Sketch", cursive;
-  float: right;
+	font-family: "Cabin Sketch", cursive;
 }
 
 /*photo headshot*/
@@ -93,6 +87,7 @@ article {
 	height: 160px;
 	width: 100%;
 }
+
 .container-fluid {
   display: flex;
 	flex: 1 100%;

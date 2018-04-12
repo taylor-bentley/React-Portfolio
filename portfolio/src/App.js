@@ -1,37 +1,43 @@
 import React, { Component } from 'react';
 import './App.css';
-import './elements/mediaPage.js';
-import './aboutMe.js';
+
+/*child components*/
+import MediaPage from  './elements/MediaPage.js';
+import AboutMe from './elements/AboutMe.js';
+import PhotographyPage from './elements/PhotographyPage.js'
+import mich from './static/mich.jpg'
+
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
 
+    }
+  }
 
 
 
   render() {
     return (
-        <body>
-          <title className= "Taylor Bentley's Web Portfolio"/>
-          <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"/>
-
-          <container id = "container"/>
+          <div container id = "container">
             <h1>Taylor Bentley</h1>
             <main>
               <div id="slider">
-                <img className = "mich" src="img/tayheadshot.jpg" alt="Taylor Bentley's Headshot"/>
-                <article> Welcome to my page! My name is Taylor Bentley, and I am a junior web developer. Take a minute to explore my page, and discover what makes me a unique fit for your company.</article>
+                <img className="mich" src={mich} alt="Taylor Bentley's Headshot"/>
+                <article> Welcome to all things Taylor! Take a minute to explore my page, and discover what makes me a unique fit for your company.</article>
               </div>
               <section className = "navbar">
                 <div className = "dropdown">Explore
                   <div className ="dropdown-content">
-                    <a href="aboutMe.js">About Me</a>
-                    <a href="mediaPage.js">Media Page</a>
+                    <a src={AboutMe}>About Me</a> <br/>
+                    <a src={MediaPage}>Media Page</a> <br/>
+                    <a src={PhotographyPage}>Photography Page</a>
                   </div>
                 </div>
               </section>
             </main>
-          </body>
+          </div>
     );
   }
 }
