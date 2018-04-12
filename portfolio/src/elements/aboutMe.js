@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../App.css';
 import mich from '../static/mich.jpg'
 
 class AboutMe extends Component {
@@ -6,7 +7,7 @@ class AboutMe extends Component {
 
 render() {
   return(
-    <div id="container">
+    <div id="aboutContainer">
       <header>
         <h1>Taylor Bentley</h1>
       </header>

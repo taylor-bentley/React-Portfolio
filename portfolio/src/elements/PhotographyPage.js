@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
+import '../App.css';
+import ReactDom from 'react-dom'; 
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
   CarouselCaption
-} from 'reactstrap';
+} from 'reactstrap'
 
 const photoItems = [
   {
@@ -147,7 +149,7 @@ class PhotographyPage extends Component {
           </Carousel>
           <div className="Home">
             <nav>
-              <a href="">Return to Home Page</a>
+              <a href="./">Return to Home Page</a>
             </nav>
           </div>
         </div>
