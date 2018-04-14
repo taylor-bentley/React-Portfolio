@@ -82,10 +82,15 @@ article {
 
 /*larger font for "Explore"*/
 .dropdown {
+	padding-left: 10px;
   font-size: 25px;
   font-weight: bolder;
 	height: 160px;
 	width: 100%;
+}
+
+.dropdown-content {
+	font-size: 15px;
 }
 
 .container-fluid {
